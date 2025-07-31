@@ -15,7 +15,7 @@ INSTALL_PATH=../../../out/libpqxx
 rm -rf build
 mkdir -p build
 cd build
-cmake -D CMAKE_INSTALL_PREFIX=${INSTALL_PATH} -D CMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DSKIP_BUILD_TEST=ON  ..
+cmake -D CMAKE_INSTALL_PREFIX=${INSTALL_PATH} -D CMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DSKIP_BUILD_TEST=ON  ..
 cmake --build . -j20 --target install
 
 cd ../../..
