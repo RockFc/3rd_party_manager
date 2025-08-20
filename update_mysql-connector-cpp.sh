@@ -15,7 +15,7 @@ INSTALL_PATH=../../../out/mysql-connector-cpp
 rm -rf build
 mkdir -p build
 cd build
-cmake -D CMAKE_INSTALL_PREFIX=${INSTALL_PATH} -D CMAKE_BUILD_TYPE=Release -D WITH_DEVAPI=ON -D WITH_TESTS=OFF -D BUILD_STATIC=ON ..
+cmake -D CMAKE_INSTALL_PREFIX=${INSTALL_PATH} -D CMAKE_BUILD_TYPE=Release -D WITH_DEVAPI=ON -D WITH_JDBC=ON -D WITH_TESTS=OFF -D BUILD_STATIC=ON ..
 cmake --build . -j20 --target install
 
 cd ../../..
